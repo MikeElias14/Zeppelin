@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-import { TranslateModule } from '@ngx-translate/core';
-
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
@@ -28,36 +25,10 @@ import { MatNativeDateModule } from '@angular/material';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-  faBars,
-  faUserCircle,
-  faPowerOff,
-  faCog,
-  faPlayCircle,
-  faRocket,
-  faPlus,
-  faEdit,
-  faTrash,
-  faTimes,
-  faCaretUp,
-  faCaretDown,
-  faExclamationTriangle,
-  faFilter,
-  faTasks,
-  faCheck,
-  faSquare,
-  faPaintBrush,
-  faLightbulb,
-  faWindowMaximize,
-  faStream,
-  faBook,
   faMusic,
-  faHeadphones,
-  faPlay,
-  faDrum,
-  faMapMarkedAlt,
-  faCamera,
-  faGlobe,
-  faPhone
+  faBars,
+  faDesktop,
+  faAddressCard
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faInstagram,
@@ -66,48 +37,19 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 library.add(
-  faBars,
-  faUserCircle,
-  faPowerOff,
-  faCog,
-  faRocket,
-  faPlayCircle,
   faInstagram,
-  faPlus,
-  faEdit,
-  faTrash,
-  faTimes,
-  faCaretUp,
-  faCaretDown,
-  faExclamationTriangle,
-  faFilter,
-  faTasks,
-  faCheck,
-  faSquare,
-  faPaintBrush,
-  faLightbulb,
-  faWindowMaximize,
-  faStream,
-  faBook,
-  faMusic,
-  faHeadphones,
-  faPlay,
-  faDrum,
   faGithub,
-  faMapMarkedAlt,
-  faCamera,
-  faGlobe,
-  faPhone,
-  faLinkedin
+  faLinkedin,
+  faMusic,
+  faBars,
+  faDesktop,
+  faAddressCard
 );
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-
-    TranslateModule,
-
     MatButtonModule,
     MatToolbarModule,
     MatSelectModule,
@@ -125,7 +67,6 @@ library.add(
     MatSnackBarModule,
     MatSlideToggleModule,
     MatDividerModule,
-
     FontAwesomeModule
   ],
   declarations: [],
@@ -133,9 +74,6 @@ library.add(
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-
-    TranslateModule,
-
     MatButtonModule,
     MatMenuModule,
     MatTabsModule,
@@ -156,7 +94,6 @@ library.add(
     MatSliderModule,
     MatDatepickerModule,
     MatNativeDateModule,
-
     FontAwesomeModule,
   ]
 })
