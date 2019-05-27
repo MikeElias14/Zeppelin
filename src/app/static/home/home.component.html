@@ -1,0 +1,59 @@
+<div class="background">
+  <div class="gradient">
+    <div class="container">
+      <h1>Welcome</h1>
+      <div class="actions">
+        <a mat-raised-button class="actions-main" color="accent" routerLink="../aboutMe" [ngClass]="routeAnimationsElements">
+          About Me
+        </a>
+        <a mat-raised-button class="actions-main" color="accent" routerLink="../projects" [ngClass]="routeAnimationsElements">
+          Projects
+        </a>
+        <a mat-raised-button class="actions-main" color="accent" routerLink="../projects" [ngClass]="routeAnimationsElements">
+          Resume
+        </a>
+
+
+<!-- Another row of differnet buttons (and subheader -->
+        <!-- <br>
+          <span [ngClass]="routeAnimationsElements">Other Buttons</span>
+        <br>
+        <a mat-raised-button
+           [ngClass]="routeAnimationsElements"
+           target="_blank"
+           href="LINK">
+           <fa-icon icon="ICON"></fa-icon>
+          TEXT
+        </a> -->
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="something-else" [ngClass]="routeAnimationsElements">
+      <h2>Something Else Here</h2>
+      <p>
+        This is something else that is wanted on the home page!!
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="git-profile" [ngClass]="routeAnimationsElements">
+      <h2>Header</h2>
+      <p>Here are more words!!</p>
+      <div class="git-profile-wrapper">
+
+  <!-- My Github Profile -->
+
+      <a class="git-profile" href="https://github.com/MikeElias14" target="_blank">
+        <img src="https://avatars0.githubusercontent.com/MikeElias14?v=4">
+        <span>Michael Elias</span>
+      </a>
+
+      </div>
+    </div>
+  </div>
+</div>

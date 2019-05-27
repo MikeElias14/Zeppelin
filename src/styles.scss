@@ -1,0 +1,36 @@
+@import 'styles-variables';
+
+@import '../node_modules/bootstrap/scss/bootstrap-reboot';
+@import '../node_modules/bootstrap/scss/bootstrap-grid';
+@import 'styles-reset';
+
+@import '../node_modules/@angular/material/theming';
+
+@include mat-core();
+
+@import 'themes/black-theme.scss';
+
+@import 'styles-reset.scss-theme';
+@import 'app/app.component.scss-theme';
+@import 'app/static/home/home.component.scss-theme';
+@import 'app/projects/smartDots/smartDots.component.scss-theme';
+@import 'app/projects/zeppelin/zeppelin.component.scss-theme';
+@import 'app/projects/aris/aris.component.scss-theme';
+@import 'app/projects/snarky/snarky.component.scss-theme';
+@import 'app/projects/projects/projects.component.scss-theme';
+
+@mixin custom-components-theme($theme) {
+  @include anms-styles-reset-theme($theme);
+  @include anms-app-component-theme($theme);
+  @include anms-home-component-theme($theme);
+  @include anms-smartDots-component-theme($theme);
+  @include anms-aris-component-theme($theme);
+  @include anms-snarky-component-theme($theme);
+  @include anms-zeppelin-component-theme($theme);
+  @include anms-projects-component-theme($theme);
+}
+
+.black-theme {
+  @include angular-material-theme($anms-black-theme);
+  @include custom-components-theme($anms-black-theme);
+}
