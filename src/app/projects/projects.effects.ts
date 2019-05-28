@@ -1,18 +1,14 @@
 import { Injectable } from '@angular/core';
 import { ActivationEnd, Router } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
-import { Actions, Effect, ofType } from '@ngrx/effects';
-import { Store, select } from '@ngrx/store';
+import { Effect } from '@ngrx/effects';
 import { merge } from 'rxjs';
-import { tap, map, distinctUntilChanged, filter } from 'rxjs/operators';
+import { tap, filter } from 'rxjs/operators';
 
 import { TitleService } from '@app/core';
 
 @Injectable()
 export class ProjectsEffects {
   constructor(
-    private store: Store<State>,
-    private translateService: TranslateService,
     private router: Router,
     private titleService: TitleService
   ) {}
@@ -25,8 +21,7 @@ export class ProjectsEffects {
   ).pipe(
     tap(() => {
       this.titleService.setTitle(
-        this.router.routerState.snapshot.root,
-        this.translateService
+        this.router.routerState.snapshot.root
       );
     })
   );

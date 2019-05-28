@@ -1,7 +1,6 @@
-// Karma configuration file, see link for more information
-// https://karma-runner.github.io/1.0/config/configuration-file.html
+// Karma configuration file
 
-// TODO: Get these tests working
+// TODO: Review tests, make sure they are still applicable
 module.exports = function (config) {
   var isWatch = config.buildWebpack.options.watch;
   config.set({

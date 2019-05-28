@@ -1,13 +1,6 @@
-import { Store, select } from '@ngrx/store';
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
 
 import { routeAnimations } from '@app/core';
-
-import { State as BaseProjectsState } from '../projects.state';
-
-interface State extends BaseSettingsState, BaseProjectsState {}
 
 @Component({
   selector: 'anms-projects',
@@ -25,9 +18,5 @@ export class ProjectsComponent implements OnInit {
     { link: 'snarky', label: 'Snarky' }
   ];
 
-  constructor(private store: Store<State>) {}
-
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 }
