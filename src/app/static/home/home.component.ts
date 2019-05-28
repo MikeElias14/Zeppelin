@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     this.myStyle = {
       "position": "absolute",
       "width": "100%",
-      "height": "100%",
+      "height": "90%", //TODO: Bug where the particles area has bad interaction with the footer on large screens
       "background-repeat": "no-repeat",
       "background-size": "cover",
       "background-position": "50% 50%"
