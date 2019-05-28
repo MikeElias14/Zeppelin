@@ -4,8 +4,6 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {
   StoreRouterConnectingModule,
   RouterStateSerializer
@@ -39,14 +37,6 @@ import { GoogleAnalyticsEffects } from './google-analytics/google-analytics.effe
           name: 'zeppelin'
         }),
 
-    // 3rd party
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    })
   ],
   declarations: [],
   providers: [
@@ -58,7 +48,7 @@ import { GoogleAnalyticsEffects } from './google-analytics/google-analytics.effe
     { provide: ErrorHandler, useClass: AppErrorHandler },
     { provide: RouterStateSerializer, useClass: CustomSerializer }
   ],
-  exports: [TranslateModule]
+  exports: []
 })
 export class CoreModule {
   constructor(
@@ -70,12 +60,4 @@ export class CoreModule {
       throw new Error('CoreModule is already loaded. Import only in AppModule');
     }
   }
-}
-
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(
-    http,
-    `${environment.i18nPrefix}/assets/i18n/`,
-    '.json'
-  );
 }

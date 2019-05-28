@@ -15,11 +15,13 @@ export class AppComponent implements OnInit {
   isProd = env.production;
   envName = env.envName;
   logo = require('../assets/logo.png');
+
+  // For internal Nav
   navigation = [
     { link: 'home', label: 'Home' },
     { link: 'aboutMe', label: 'About Me' },
-    { link: 'projects', label: 'Projects' },
-    { link: 'projects', label: 'Resume' } //TODO: accent on rEsume
+    // Can add projects back in later. For now it is repetitive given all the info is on github
+    // { link: 'projects', label: 'Projects' }
   ];
   navigationSideMenu = [
     ...this.navigation

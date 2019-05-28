@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: 'home'
+  },
+  {
+    path: 'resume',
+    redirectTo: 'assets/Michael-Elias-resume.pdf'
   }
 ];
 

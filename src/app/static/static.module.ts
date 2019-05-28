@@ -7,9 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './aboutMe/aboutMe.component';
 
 import { ParticlesModule } from 'angular-particle';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 @NgModule({
-  imports: [SharedModule, StaticRoutingModule, ParticlesModule],
+  imports: [SharedModule, StaticRoutingModule, ParticlesModule, NgxExtendedPdfViewerModule],
   declarations: [HomeComponent, AboutMeComponent]
 })
 export class StaticModule {}

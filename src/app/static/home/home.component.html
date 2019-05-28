@@ -1,38 +1,43 @@
-<!-- Run the particles -->
+<!-- PARTICLES -->
+
 <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
 
-<!-- Main container -->
+<!-- MAIN CONTAINER -->
 
 <div class="container">
   <div class="main-title">
     Welcome
   </div>
+
   <div class="actions">
     <a mat-raised-button class="actions-main" color="accent" routerLink="../aboutMe" [ngClass]="routeAnimationsElements">
       <fa-icon icon="music"></fa-icon>
       About Me
     </a>
-    <a mat-raised-button class="actions-main" color="accent" routerLink="../projects" [ngClass]="routeAnimationsElements">
+    <!-- <a mat-raised-button class="actions-main" color="accent" routerLink="../projects" [ngClass]="routeAnimationsElements">
       <fa-icon icon="desktop"></fa-icon>
       Projects
-    </a>
-    <a mat-raised-button class="actions-main" color="accent" routerLink="../projects" [ngClass]="routeAnimationsElements">
+    </a> -->
+    <a mat-raised-button class="actions-main" color="accent" href="assets/Michael-Elias-resume.pdf" target="_blank" [ngClass]="routeAnimationsElements">
       <fa-icon icon="address-card"></fa-icon>
       Resume
     </a>
   </div>
 
   <div class="intro" [ngClass]="routeAnimationsElements">
-    <p>Welcome to my website. Feel free to take a look around!</p>
+    <p>Welcome to my website. Hire me, Check out my Github!</p>
   </div>
 
-    <!-- TODO: This needs to be clickable -->
   <div class="git-profile" [ngClass]="routeAnimationsElements">
     <div class="git-profile-wrapper">
-      <a class="git-profile" href="https://github.com/MikeElias14" target="_blank">
+      <a class="git-profile">
         <img src="https://avatars0.githubusercontent.com/MikeElias14?v=4">
-        <span>Michael Elias</span>
       </a>
     </div>
+
+    <a mat-raised-button class="actions-main" href="https://github.com/MikeElias14" color="accent" target="_blank">
+      <fa-icon [icon]="['fab','github']"></fa-icon>
+      Michael Elias
+    </a>
   </div>
 </div>
