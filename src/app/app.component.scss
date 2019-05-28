@@ -54,13 +54,6 @@ mat-sidenav-container {
       width: 40px;
       font-size: 14px;
     }
-
-    @media (max-width: map-get($grid-breakpoints, lg)) {
-      .nav-button {
-        min-width: 0;
-        padding: 0 10px;
-      }
-    }
   }
 
   .wrapper {
@@ -111,48 +104,8 @@ mat-sidenav-container {
               transition: width 0.5s;
             }
           }
-
-          @media (min-width: map-get($grid-breakpoints, lg)) {
-            a {
-              padding: 20px 10px;
-            }
-          }
-
-          @media (max-width: map-get($grid-breakpoints, md)) {
-            a {
-              padding: 20px;
-
-              span {
-                width: 0;
-                padding: 0;
-              }
-            }
-          }
-
-          @media (max-width: map-get($grid-breakpoints, sm)) {
-            a {
-              padding: 20px 5px;
-            }
-          }
-        }
-
-        @media (min-width: map-get($grid-breakpoints, sm)) {
-          .signature {
-            position: relative;
-
-            a {
-              position: absolute;
-              right: 15px;
-            }
-          }
         }
       }
-    }
-  }
-
-  @media (max-width: $toolbar-breakpoint) {
-    .content {
-      margin-top: 56px !important;
     }
   }
 }
