@@ -4,7 +4,6 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import { routeAnimations } from '@app/core';
-import { State as BaseSettingsState } from '@app/settings';
 
 import { State as BaseProjectsState } from '../projects.state';
 

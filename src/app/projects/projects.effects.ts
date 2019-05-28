@@ -7,10 +7,6 @@ import { merge } from 'rxjs';
 import { tap, map, distinctUntilChanged, filter } from 'rxjs/operators';
 
 import { TitleService } from '@app/core';
-import {
-  State,
-  selectSettingsState,
-} from '@app/settings';
 
 @Injectable()
 export class ProjectsEffects {
