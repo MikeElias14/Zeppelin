@@ -1,8 +1,7 @@
-import { NgModule, Optional, SkipSelf, ErrorHandler } from '@angular/core';
+import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
-import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import {
   StoreRouterConnectingModule,
@@ -11,15 +10,11 @@ import {
 
 import { environment } from '@env/environment';
 
-import { httpInterceptorProviders } from './http-interceptors';
 import { LocalStorageService } from './local-storage/local-storage.service';
 import { AnimationsService } from './animations/animations.service';
 import { TitleService } from './title/title.service';
 import { reducers, metaReducers } from './core.state';
-import { AppErrorHandler } from './error-handler/app-error-handler.service';
 import { CustomSerializer } from './router/custom-serializer';
-import { NotificationService } from './notifications/notification.service';
-import { GoogleAnalyticsEffects } from './google-analytics/google-analytics.effects';
 
 @NgModule({
   imports: [
@@ -30,7 +25,6 @@ import { GoogleAnalyticsEffects } from './google-analytics/google-analytics.effe
     // ngrx
     StoreModule.forRoot(reducers, { metaReducers }),
     StoreRouterConnectingModule.forRoot(),
-    EffectsModule.forRoot([GoogleAnalyticsEffects]),
     environment.production
       ? []
       : StoreDevtoolsModule.instrument({
@@ -40,12 +34,9 @@ import { GoogleAnalyticsEffects } from './google-analytics/google-analytics.effe
   ],
   declarations: [],
   providers: [
-    NotificationService,
     LocalStorageService,
     AnimationsService,
-    httpInterceptorProviders,
     TitleService,
-    { provide: ErrorHandler, useClass: AppErrorHandler },
     { provide: RouterStateSerializer, useClass: CustomSerializer }
   ],
   exports: []
