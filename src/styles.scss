@@ -13,6 +13,7 @@
 @import 'styles-reset.scss-theme';
 @import 'app/app.component.scss-theme';
 @import 'app/static/home/home.component.scss-theme';
+@import 'app/static/aboutMe/aboutMe.component.scss-theme';
 @import 'app/projects/smartDots/smartDots.component.scss-theme';
 @import 'app/projects/zeppelin/zeppelin.component.scss-theme';
 @import 'app/projects/aris/aris.component.scss-theme';
@@ -23,6 +24,7 @@
   @include anms-styles-reset-theme($theme);
   @include anms-app-component-theme($theme);
   @include anms-home-component-theme($theme);
+  @include anms-aboutMe-component-theme($theme);
   @include anms-smartDots-component-theme($theme);
   @include anms-aris-component-theme($theme);
   @include anms-snarky-component-theme($theme);

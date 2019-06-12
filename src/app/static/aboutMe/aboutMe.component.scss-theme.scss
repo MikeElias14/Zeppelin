@@ -1,12 +1,12 @@
 @import '~@angular/material/theming';
 
-@mixin anms-home-component-theme($theme) {
+@mixin anms-aboutMe-component-theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
   $foreground: map-get($theme, foreground);
   $background: map-get($theme, background);
 
-  anms-home {
+  anms-aboutMe {
     .background {
       color: mat-color($foreground, text);
       background-color: mat-color($background, background);

@@ -18,8 +18,8 @@ export class AppComponent implements OnInit {
 
   // For internal Nav
   navigation = [
-    { link: 'home', label: 'Home' },
-    { link: 'aboutMe', label: 'About Me' }
+    { link: 'home', label: 'Home' }
+    // { link: 'aboutMe', label: 'About Me' }
     // { link: 'projects', label: 'Projects' } // Can add projects back in later. For now it is repetitive given all the info is on github
   ];
   navigationSideMenu = [
