@@ -17,7 +17,7 @@ const routes: Routes = [
   },
   {
     path: 'resume',
-    redirectTo: 'assets/Michael-Elias-resume.pdf'
+    redirectTo: 'assets/Michael_Elias_Resume.pdf'
   }
 ];
 
