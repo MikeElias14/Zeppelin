@@ -1,0 +1,41 @@
+<!-- PARTICLES -->
+
+<particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+
+<!-- MAIN CONTAINER -->
+
+<div class="container">
+  <div class="main-title">
+    Hi, I'm Michael
+  </div>
+
+  <div class="actions">
+    <!-- <a mat-raised-button class="actions-main" color="accent" routerLink="../aboutMe" [ngClass]="routeAnimationsElements">
+      <fa-icon icon="music"></fa-icon>
+      About Me
+    </a> -->
+    <a mat-raised-button class="actions-main" color="accent" href="assets/Michael_Elias_Resume.pdf" target="_blank" [ngClass]="routeAnimationsElements">
+      <fa-icon icon="address-card"></fa-icon>
+      R&eacute;sum&eacute;
+    </a>
+  </div>
+
+  <div class="intro" [ngClass]="routeAnimationsElements">
+    <p>I am currently in 3B Systems Design Engineering at the University of Waterloo. In my free time I enjoy playing music,
+      sports, and the outdoors. I am currently looking for a four month co-op position for the Summber 2020 term. Feel free to checkout my Github to see what I've been up to! 
+    </p>
+  </div>
+
+  <div class="git-profile" [ngClass]="routeAnimationsElements">
+    <div class="git-profile-wrapper">
+      <a class="git-profile">
+        <img src="https://avatars0.githubusercontent.com/MikeElias14?v=4">
+      </a>
+    </div>
+
+    <a mat-raised-button class="actions-main" href="https://github.com/MikeElias14" color="accent" target="_blank">
+      <fa-icon [icon]="['fab','github']"></fa-icon>
+      Michael Elias
+    </a>
+  </div>
+</div>

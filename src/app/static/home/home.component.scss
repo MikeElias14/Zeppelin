@@ -1,0 +1,90 @@
+@import '../../../styles-variables';
+
+.main-title {
+  text-align: center;
+  font-size: 5em;
+  text-transform: uppercase;
+  padding: 40px 0 0 0;
+}
+
+.actions {
+  text-align: center;
+  margin: 20px;
+  z-index: 1;
+
+  span {
+    display: inline-block;
+    font-weight: bold;
+    padding: 20px 10px 30px 10px;
+  }
+
+  a {
+    margin: 0 5px 10px 0;
+
+    &.actions-main {
+      text-transform: uppercase;
+      padding: 3px 24px;
+    }
+
+    fa-icon {
+      position: relative;
+      bottom: 1px;
+      right: 2px;
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+}
+
+.intro {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  p {
+    font-size: 1.5em;
+    a {
+      border-bottom: 3px solid;
+    }
+  }
+}
+
+.git-profile {
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  p {
+    a {
+      border-bottom: 3px solid;
+    }
+  }
+
+  .git-profile-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+      margin: 8px;
+      width: 100px;
+      display: inline-block;
+      text-align: center;
+
+      span {
+        display: inline-block;
+        padding: 10px 0 0 0;
+        line-height: 16px;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 100px;
+        border: 5px solid;
+        box-shadow: 0 3px 1px -2px rgba(15, 15, 15, 0.1),
+          0 2px 2px 0 rgba(15, 15, 15, 0.1), 0 1px 5px 0 rgba(15, 15, 15, 0.1);
+      }
+    }
+  }
+}

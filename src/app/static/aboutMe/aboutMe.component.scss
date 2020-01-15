@@ -1,0 +1,29 @@
+@import '../../../styles-variables';
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.container {
+  position: relative;
+}
+
+.about {
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+
+  p {
+    line-height: 40px;
+
+    a {
+      border-bottom: 3px solid;
+    }
+  }
+}
