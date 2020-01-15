@@ -17,10 +17,10 @@ describe('App', () => {
     expect(page.getCurrentYear()).toEqual(new Date().getFullYear().toString());
   });
 
-  it('should have "home", "AboutMe", "Projects" menus', () => {
+  it('should have "home", "AboutMe" menus', () => {
     page.navigateTo();
     page
       .getAllMenus()
-      .then(menus => expect(menus).toEqual(['home', 'AboutMe', 'Projects']));
+      .then(menus => expect(menus).toEqual(['home', 'AboutMe']));
   });
 });

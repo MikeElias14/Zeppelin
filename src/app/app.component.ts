@@ -20,7 +20,6 @@ export class AppComponent implements OnInit {
   navigation = [
     { link: 'home', label: 'Home' }
     // { link: 'aboutMe', label: 'About Me' }
-    // { link: 'projects', label: 'Projects' } // Can add projects back in later. For now it is repetitive given all the info is on github
   ];
   navigationSideMenu = [
     ...this.navigation

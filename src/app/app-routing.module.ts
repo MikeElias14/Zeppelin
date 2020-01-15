@@ -8,10 +8,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'projects',
-    loadChildren: 'app/projects/projects.module#ProjectsModule'
-  },
-  {
     path: '**',
     redirectTo: 'home'
   },

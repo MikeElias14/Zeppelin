@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     this.myStyle = {
       "position": "absolute",
       "width": "100%",
-      "height": "90%", //TODO: Bug where the particles area has bad interaction with the footer on large screens
+      "height": "90%", //TODO: Bug where the particles only appear to the bottom of the orgionally loaded screen size, anything past the scroll does not particle
       "background-repeat": "no-repeat",
       "background-size": "cover",
       "background-position": "50% 50%"
