@@ -1,6 +1,5 @@
 runtime: nodejs10
 api_version: 1
-threadsafe: yes
 
 env_variables:
   API_KEY: <API key for projects app engine>
