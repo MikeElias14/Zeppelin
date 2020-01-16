@@ -2,7 +2,6 @@
 
 @import '../node_modules/bootstrap/scss/bootstrap-reboot';
 @import '../node_modules/bootstrap/scss/bootstrap-grid';
-@import 'styles-reset';
 
 @import '../node_modules/@angular/material/theming';
 
@@ -10,13 +9,11 @@
 
 @import 'themes/black-theme.scss';
 
-@import 'styles-reset.scss-theme';
 @import 'app/app.component.scss-theme';
 @import 'app/static/home/home.component.scss-theme';
 @import 'app/static/aboutMe/aboutMe.component.scss-theme';
 
 @mixin custom-components-theme($theme) {
-  @include anms-styles-reset-theme($theme);
   @include anms-app-component-theme($theme);
   @include anms-home-component-theme($theme);
   @include anms-aboutMe-component-theme($theme);

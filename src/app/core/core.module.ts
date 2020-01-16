@@ -10,9 +10,7 @@ import {
 
 import { environment } from '@env/environment';
 
-import { LocalStorageService } from './local-storage/local-storage.service';
 import { AnimationsService } from './animations/animations.service';
-import { TitleService } from './title/title.service';
 import { reducers, metaReducers } from './core.state';
 import { CustomSerializer } from './router/custom-serializer';
 
@@ -34,9 +32,7 @@ import { CustomSerializer } from './router/custom-serializer';
   ],
   declarations: [],
   providers: [
-    LocalStorageService,
     AnimationsService,
-    TitleService,
     { provide: RouterStateSerializer, useClass: CustomSerializer }
   ],
   exports: []
