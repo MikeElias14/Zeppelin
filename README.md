@@ -4,7 +4,7 @@ Personal Website: www.michaelelias.dev
 
 This repository houses the source code for my personal website.
 
-This project is build using Angular 8, express, and is being hosted as a Google Cloud Application.
+This project is build using Angular 8, express, and is being hosted on Google Cloud.
 
 #### Led Zeppelin
 
